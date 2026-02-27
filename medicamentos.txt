@@ -1,0 +1,6 @@
+MEDICAMENTO
+Codigo: 1
+Nombre: q
+Uso: q
+Stock: 1
+---------------------

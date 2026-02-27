@@ -1,0 +1,7 @@
+DOCTOR
+Codigo: 1
+Nombre: q
+Telefono: q
+Especialidad: q
+---------------------
+
