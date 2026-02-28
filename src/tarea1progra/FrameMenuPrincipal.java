@@ -58,51 +58,60 @@ public class FrameMenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(102, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(102, 255, 255));
+
+        jLabel1.setForeground(new java.awt.Color(102, 102, 102));
         jLabel1.setText("Menu Principal");
 
+        verdoc.setBackground(new java.awt.Color(102, 102, 102));
+        verdoc.setForeground(new java.awt.Color(255, 255, 255));
         verdoc.setText("Ver Doctores");
         verdoc.addActionListener(this::verdocActionPerformed);
 
+        vermed.setBackground(new java.awt.Color(102, 102, 102));
+        vermed.setForeground(new java.awt.Color(255, 255, 255));
         vermed.setText("Ver Medicamentos");
         vermed.addActionListener(this::vermedActionPerformed);
 
+        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("Ingrese codigo para buscar");
 
+        btnBuscarDoctor.setBackground(new java.awt.Color(102, 102, 102));
+        btnBuscarDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnBuscarDoctor.setText("Buscar");
         btnBuscarDoctor.addActionListener(this::btnBuscarDoctorActionPerformed);
 
-        labelResultadoDoctor.setText("jLabel3");
+        labelResultadoDoctor.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(145, 145, 145)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(verdoc))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
-                                .addComponent(vermed)
-                                .addGap(76, 76, 76))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(txtBuscarDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnBuscarDoctor)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(labelResultadoDoctor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel2)
+                            .addComponent(verdoc))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(vermed)
+                                .addGap(72, 72, 72))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(txtBuscarDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(227, Short.MAX_VALUE))))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,9 +129,12 @@ public class FrameMenuPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnBuscarDoctor)
                 .addGap(18, 18, 18)
-                .addComponent(labelResultadoDoctor)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addComponent(labelResultadoDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
+
+        jMenuBar1.setBackground(new java.awt.Color(0, 102, 255));
+        jMenuBar1.setForeground(new java.awt.Color(153, 153, 153));
 
         jMenu1.setText("Archivo");
 

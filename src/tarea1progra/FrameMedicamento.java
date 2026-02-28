@@ -53,14 +53,22 @@ public class FrameMedicamento extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Codigo");
 
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Nombre medicamento");
 
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Uso medicamento");
 
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Stock");
 
+        txtCodigo.setBackground(new java.awt.Color(0, 255, 255));
+        txtCodigo.setForeground(new java.awt.Color(255, 255, 255));
         txtCodigo.addActionListener(this::txtCodigoActionPerformed);
         txtCodigo.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -68,24 +76,40 @@ public class FrameMedicamento extends javax.swing.JFrame {
             }
         });
 
+        txtNombreMedicamento.setBackground(new java.awt.Color(0, 255, 255));
+        txtNombreMedicamento.setForeground(new java.awt.Color(255, 255, 255));
         txtNombreMedicamento.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtNombreMedicamentoKeyPressed(evt);
             }
         });
 
+        txtUsoMedicamento.setBackground(new java.awt.Color(0, 255, 255));
+        txtUsoMedicamento.setForeground(new java.awt.Color(255, 255, 255));
         txtUsoMedicamento.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtUsoMedicamentoKeyPressed(evt);
             }
         });
 
+        txtStock.setBackground(new java.awt.Color(0, 255, 255));
+        txtStock.setForeground(new java.awt.Color(255, 255, 255));
         txtStock.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtStockKeyPressed(evt);
             }
         });
 
+        labelCodigo.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelNombreMedicamento.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelUsoMedicamento.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelStock.setForeground(new java.awt.Color(255, 255, 255));
+
+        botonCapturar.setBackground(new java.awt.Color(0, 255, 255));
+        botonCapturar.setForeground(new java.awt.Color(255, 255, 255));
         botonCapturar.setText("Capturar Datos");
         botonCapturar.addActionListener(this::botonCapturarActionPerformed);
         botonCapturar.addKeyListener(new java.awt.event.KeyAdapter() {

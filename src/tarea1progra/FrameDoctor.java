@@ -54,38 +54,54 @@ public class FrameDoctor extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Codigo");
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nombre Doctor");
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Telefono Doctor");
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Especialidad");
 
+        txtCodigo.setBackground(new java.awt.Color(0, 255, 255));
+        txtCodigo.setForeground(new java.awt.Color(255, 255, 255));
         txtCodigo.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtCodigoKeyPressed(evt);
             }
         });
 
+        txtNombreDoctor.setBackground(new java.awt.Color(0, 255, 255));
+        txtNombreDoctor.setForeground(new java.awt.Color(255, 255, 255));
         txtNombreDoctor.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtNombreDoctorKeyPressed(evt);
             }
         });
 
+        txtTelefonoDoctor.setBackground(new java.awt.Color(0, 255, 255));
+        txtTelefonoDoctor.setForeground(new java.awt.Color(255, 255, 255));
         txtTelefonoDoctor.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtTelefonoDoctorKeyPressed(evt);
             }
         });
 
+        txtEspecialidad.setBackground(new java.awt.Color(0, 255, 255));
+        txtEspecialidad.setForeground(new java.awt.Color(255, 255, 255));
         txtEspecialidad.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtEspecialidadKeyPressed(evt);
             }
         });
 
+        botonCapturar.setBackground(new java.awt.Color(0, 255, 255));
+        botonCapturar.setForeground(new java.awt.Color(255, 255, 255));
         botonCapturar.setText("Capturar Datos");
         botonCapturar.addActionListener(this::botonCapturarActionPerformed);
         botonCapturar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -93,6 +109,14 @@ public class FrameDoctor extends javax.swing.JFrame {
                 botonCapturarKeyPressed(evt);
             }
         });
+
+        labelCodigo.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelNombreDoctor.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelTelefonoDoctor.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelEspecialidad.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
